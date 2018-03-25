@@ -16,6 +16,18 @@ and open the template in the editor.
 * Pied de page / footer
 
 */
+
+
+.site {
+    width: 83.015873%;
+    margin: auto;
+    max-width: 1260px;
+}
+
+.site-header {
+    text-align: center;
+}
+
 #main, #header, .footer{
    // width : 83.015873%;
    // max-width: 1260px;
@@ -43,15 +55,12 @@ and open the template in the editor.
 }
 
 
-
-footer{
+.site-footer{
     background-color:$blue-500; 
     color: $white;
-
-
 }
 
-.footer{
+.site-footer{
     justify-content: center;
     margin: auto;
 }

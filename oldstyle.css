@@ -17,12 +17,7 @@ and open the template in the editor.
     Created on : 8 mars 2018, 15:04:19
     Author     : ajall
 */
-/*A d├®truire*/
-.signal {
-  color: red; }
-
-/* Logo */
-.custom-logo {
+.header-logo {
   width: 19.8412698%;
   min-width: 250px; }
 
@@ -50,14 +45,7 @@ button:hover {
   background-image: linear-gradient(to bottom, #0A89BF, #0CDFE8);
   text-decoration: none; }
 
-.etiquette-visite {
-  text-transform: uppercase; }
-  .etiquette-visite a, .etiquette-visite a:hover, .etiquette-visite a:focus {
-    text-decoration: none; }
-
-.section-2 {
-  background-color: #ddf8e3; }
-
+/* Accueil */
 .footer-facebook {
   width: 19,1204%; }
 
@@ -70,74 +58,41 @@ and open the template in the editor.
     Created on : 8 mars 2018, 15:08:14
     Author     : ajall
 */
-/* Gestion du toggle des menus */
-@media (max-width: 767px) {
-  ul[aria-expanded="false"] {
-    display: none; } }
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none; } }
-/* Navigation principale */
-.main-navigation {
-  text-align: center; }
-  .main-navigation ul {
-    text-transform: uppercase;
-    font-size: 1.8rem;
-    font-weight: 500;
-    letter-spacing: 56;
-    line-height: 1.5; }
-  .main-navigation a {
+/* Main nav*/
+.main-nav ul {
+  list-style-type: circle;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 56;
+  line-height: 1.5; }
+  .main-nav ul a {
     text-decoration: none; }
-  .main-navigation li {
-    display: inline-block;
-    padding-right: .5em; }
-    .main-navigation li ::before {
-      padding-right: .3em;
-      content: url("../img/menu-off.png"); }
-  .main-navigation li.current-page-item ::before, .main-navigation li.current-menu-item ::before, .main-navigation li.current-category-ancestor ::before {
-    padding-right: .3em;
-    content: url("../img/menu-on.png"); }
 
-/* Navigation visites */
-.category-navigation {
-  text-align: center; }
-  .category-navigation ul {
-    font-size: 1.8rem;
-    font-weight: 500;
-    letter-spacing: 56;
-    line-height: 1.5;
-    list-style-type: none; }
-  .category-navigation a {
-    text-decoration: none; }
-  .category-navigation li {
-    display: inline-block;
-    padding: .5em;
-    margin: 0 .5em;
-    background-color: #0CDFE8;
-    border-radius: 10px; }
-  .category-navigation li.current-page-item, .category-navigation li.current-menu-item {
-    background-color: limegreen; }
+.main-nav ul {
+  justify-content: center; }
 
-/* Navigation footer */
-.footer-navigation {
-  text-align: center; }
-  .footer-navigation ul {
-    list-style-type: none;
-    font-size: 1.8rem;
-    font-weight: 500;
-    letter-spacing: 56;
-    line-height: 1.5; }
-  .footer-navigation a {
-    text-decoration: none; }
-    .footer-navigation a :hover {
-      letter-spacing: 50;
-      color: #02FF38;
-      text-decoration: none; }
-  .footer-navigation li {
-    display: inline-block; }
-    .footer-navigation li ::after {
-      content: "|";
-      padding-left: 2.25rem; }
+.tags-links {
+  font-size: 1.2rem;
+  font-weight: 200;
+  text-transform: uppercase; }
+
+.footer ul {
+  list-style-type: none; }
+
+.footer li::after {
+  content: "|";
+  padding-left: 2.25rem; }
+
+.footer ul li a, .footer a {
+  letter-spacing: 50;
+  color: #fff;
+  text-decoration: none; }
+
+.footer ul li a:hover, .footer a:hover {
+  letter-spacing: 50;
+  color: #02FF38;
+  text-decoration: none; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -156,14 +111,6 @@ and open the template in the editor.
 * Pied de page / footer
 
 */
-.site {
-  width: 83.015873%;
-  margin: auto;
-  max-width: 1260px; }
-
-.site-header {
-  text-align: center; }
-
 .home section {
   justify-content: center; }
 
@@ -175,11 +122,11 @@ and open the template in the editor.
   width: 32.53968253968%;
   max-width: 404px; }
 
-.site-footer {
+footer {
   background-color: #032E40;
   color: #fff; }
 
-.site-footer {
+.footer {
   justify-content: center;
   margin: auto; }
 
@@ -199,9 +146,7 @@ p::first-letter {
 
 h1 {
   font-weight: 400;
-  color: #032E40;
-  text-align: center;
-  line-height: 1em; }
+  color: #032E40; }
 
 h1::after {
   display: block;

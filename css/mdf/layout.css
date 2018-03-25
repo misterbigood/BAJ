@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$blue-500".
-        on line 48 of E:\christophe\NetBeansProjects\repository\Balade aux jardins\scss\mdf\layout.scss
+        on line 59 of E:\christophe\NetBeansProjects\Balade aux jardins\scss\mdf\layout.scss
 
-43: }
-44: 
-45: 
-46: 
-47: footer{
-48:     background-color:$blue-500; 
-49:     color: $white;
-50: 
-51: 
-52: }
-53: 
+54: 
+55: }
+56: 
+57: 
+58: .site-footer{
+59:     background-color:$blue-500; 
+60:     color: $white;
+61: }
+62: 
+63: .site-footer{
+64:     justify-content: center;
 
 Backtrace:
-E:\christophe\NetBeansProjects\repository\Balade aux jardins\scss\mdf\layout.scss:48
+E:\christophe\NetBeansProjects\Balade aux jardins\scss\mdf\layout.scss:59
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
@@ -62,4 +62,4 @@ C:/Ruby22/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blue-500\".\A         on line 48 of E:\christophe\NetBeansProjects\repository\Balade aux jardins\scss\mdf\layout.scss\A \A 43: }\A 44: \A 45: \A 46: \A 47: footer{\A 48:     background-color:$blue-500; \A 49:     color: $white;\A 50: \A 51: \A 52: }\A 53: "; }
+  content: "Error: Undefined variable: \"$blue-500\".\A         on line 59 of E:\christophe\NetBeansProjects\Balade aux jardins\scss\mdf\layout.scss\A \A 54: \A 55: }\A 56: \A 57: \A 58: .site-footer{\A 59:     background-color:$blue-500; \A 60:     color: $white;\A 61: }\A 62: \A 63: .site-footer{\A 64:     justify-content: center;"; }

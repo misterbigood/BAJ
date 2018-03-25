@@ -8,7 +8,13 @@ and open the template in the editor.
     Author     : ajall
 */
 
-.header-logo{
+/*A détruire*/
+.signal {
+    color: red;
+}
+
+/* Logo */
+.custom-logo{
     width: 19.8412698%;
     min-width: 250px;
 }
@@ -40,8 +46,18 @@ button:hover {
   text-decoration: none;
 }
 
+.etiquette-visite {
+    text-transform: uppercase;
+    
+    a, a:hover, a:focus  {
+        text-decoration: none;
+    }
+}
 
-/* Accueil */
+.section-2 {
+    background-color: #ddf8e3;
+}
+
 
 
 .footer-facebook{

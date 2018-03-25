@@ -14,6 +14,15 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
+                <nav id="footer-site-navigation" class="footer-navigation">
+			<button class="menu-toggle" aria-controls="footer-menu" aria-expanded="false"><?php esc_html_e( 'Footer Menu', 'baladesauxjardins' ); ?></button>
+			<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-2',
+					'menu_id'        => 'footer-menu',
+				) );
+			?>
+		</nav><!-- #site-navigation -->
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'baladesauxjardins' ) ); ?>"><?php
 				/* translators: %s: CMS name, i.e. WordPress. */

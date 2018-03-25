@@ -7,56 +7,117 @@ and open the template in the editor.
     Created on : 8 mars 2018, 15:08:14
     Author     : ajall
 */
-/* Main nav*/
-.main-nav ul{
-    list-style-type: circle;
+
+/* Gestion du toggle des menus */
+@include respond-to("medium") {
+    ul[aria-expanded="false"] {
+        display: none;
+    }
+}
+
+@media (min-width: $medium)
+{
+    .menu-toggle {
+        display: none;
+    }
+}
+
+/* Navigation principale */
+    .main-navigation {
+    
+    text-align: center;
+    
+    ul {
     text-transform: uppercase;
     font-size:1.8rem;
     font-weight: $weight-medium;
     letter-spacing: 56;
     line-height: $line-height-base;
-
+    }
+    
     a {
         text-decoration:none;
     }
-
-
-
-
+    
+    li {
+        display: inline-block;
+        padding-right: .5em;
+        
+        ::before {
+            padding-right: .3em;
+            content: url('../img/menu-off.png');
+        }
+    }
+    
+    li.current-page-item, li.current-menu-item, li.current-category-ancestor {
+            ::before {
+                padding-right: .3em; 
+                content: url('../img/menu-on.png');
+            }
+    }
 }
 
-.main-nav ul{
-    justify-content: center;
-}
-
-.tags-links{
-    font-size:1.2rem;
-    font-weight: $weight-light;
-    text-transform: uppercase;
-}
-
-.footer ul{
+/* Navigation visites */
+ .category-navigation {
+    
+    text-align: center;
+    
+    ul {
+    font-size:1.8rem;
+    font-weight: $weight-medium;
+    letter-spacing: 56;
+    line-height: $line-height-base;
     list-style-type: none;
+    }
+    
+    a {
+        text-decoration:none;
+    }
+    
+    li {
+        display: inline-block;
+        padding: .5em;
+        margin: 0 .5em;
+        background-color: #0CDFE8;
+        border-radius: 10px;
+    }
+    
+    li.current-page-item, li.current-menu-item {
+        background-color:limegreen;
+    }
 }
 
-.footer li::after{
-    content:"|";
-    padding-left: $spacer-medium;
-
+/* Navigation footer */
+.footer-navigation {
+    
+    text-align: center;
+    
+    ul {
+    list-style-type: none;
+    font-size:1.8rem;
+    font-weight: $weight-medium;
+    letter-spacing: 56;
+    line-height: $line-height-base;
+    }
+    
+    a {
+        text-decoration:none;
+        :hover {
+            letter-spacing: 50;
+            color:$green-500;
+            text-decoration:none;
+        }
+    }
+    
+    li {
+        display: inline-block;
+        
+        ::after {
+            content:"|";
+            padding-left: $spacer-medium;
+        }
+    }
+    
 }
-.footer nav ul{
-   
 
-}
 
-.footer ul li a, .footer a {
-    letter-spacing: 50;
-    color:$white;
-    text-decoration:none;
-}
-
-.footer ul li a:hover, .footer a:hover {
-    letter-spacing: 50;
-    color:$green-500;
-    text-decoration:none;
-}

@@ -44,7 +44,9 @@ if ( ! function_exists( 'baladesauxjardins_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'baladesauxjardins' ),
+			'menu-1' => esc_html__( 'Primary_menu', 'baladesauxjardins' ),
+                        'menu-2' => esc_html__( 'Footer_menu', 'baladesauxjardins' ),
+                        'menu-3' => esc_html__( 'Category_menu', 'baladesauxjardins' ),
 		) );
 
 		/*
