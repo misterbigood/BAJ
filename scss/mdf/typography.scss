@@ -1,0 +1,78 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8 mars 2018, 15:06:54
+    Author     : ajall
+*/
+
+/** @section Typographie ---*/
+
+p::first-letter {
+    font-size: 130%;
+    font-weight:$weight-bold;
+}
+
+
+
+
+h1{
+    font-weight: $weight-regular ;
+
+
+    color: $color-brand;
+}
+
+
+
+
+h1::after{
+    display: block;
+    content:url(../img/acolade.svg);
+
+
+    width:208px;
+    margin: auto;
+
+}
+
+h2::before{
+    display: block;
+    content:url(../img/trait-vert.svg);
+    width:84px;
+
+}
+
+
+h2{
+    font-weight:$weight-medium ;
+    line-height:$line-height-base;//24
+    text-transform: uppercase;
+    color: $color-brand;
+}
+
+h3{font-weight: $weight-regular ;
+
+   color: $color-brand;
+}
+
+h4{
+    font-weight: $weight-medium ;
+    color: $color-brand;
+}
+
+h5{
+    color: $color-brand;
+}
+
+h6{
+    color: $color-brand;
+}
+
+figcaption{
+    font-size:1.6rem;
+    color: $color-brand;
+}//légende qui accompagne une photo
+

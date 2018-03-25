@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8 mars 2018, 15:08:14
+    Author     : ajall
+*/
+/* Main nav*/
+.main-nav ul{
+    list-style-type: circle;
+    text-transform: uppercase;
+    font-size:1.8rem;
+    font-weight: $weight-medium;
+    letter-spacing: 56;
+    line-height: $line-height-base;
+
+    a {
+        text-decoration:none;
+    }
+
+
+
+
+}
+
+.main-nav ul{
+    justify-content: center;
+}
+
+.tags-links{
+    font-size:1.2rem;
+    font-weight: $weight-light;
+    text-transform: uppercase;
+}
+
+.footer ul{
+    list-style-type: none;
+}
+
+.footer li::after{
+    content:"|";
+    padding-left: $spacer-medium;
+
+}
+.footer nav ul{
+   
+
+}
+
+.footer ul li a, .footer a {
+    letter-spacing: 50;
+    color:$white;
+    text-decoration:none;
+}
+
+.footer ul li a:hover, .footer a:hover {
+    letter-spacing: 50;
+    color:$green-500;
+    text-decoration:none;
+}

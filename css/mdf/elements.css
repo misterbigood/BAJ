@@ -1,0 +1,42 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8 mars 2018, 15:04:19
+    Author     : ajall
+*/
+.header-logo {
+  width: 19.8412698%;
+  min-width: 250px; }
+
+/*Boutons*/
+button {
+  background: #0DB6FF;
+  background-image: -webkit-linear-gradient(top, #0DB6FF, #0A89BF);
+  background-image: -moz-linear-gradient(top, #0DB6FF, #0A89BF);
+  background-image: -ms-linear-gradient(top, #0DB6FF, #0A89BF);
+  background-image: -o-linear-gradient(top, #0DB6FF, #0A89BF);
+  background-image: linear-gradient(to bottom, #0DB6FF, #0A89BF);
+  -webkit-border-radius: 36;
+  -moz-border-radius: 36;
+  border-radius: 36px;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none; }
+
+button:hover {
+  background: #0A89BF;
+  background-image: -webkit-linear-gradient(top, #0A89BF, #0CDFE8);
+  background-image: -moz-linear-gradient(top, #0A89BF, #0CDFE8);
+  background-image: -ms-linear-gradient(top, #0A89BF, #0CDFE8);
+  background-image: -o-linear-gradient(top, #0A89BF, #0CDFE8);
+  background-image: linear-gradient(to bottom, #0A89BF, #0CDFE8);
+  text-decoration: none; }
+
+/* Accueil */
+.footer-facebook {
+  width: 19,1204%; }
+
+/*# sourceMappingURL=elements.css.map */

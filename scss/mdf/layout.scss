@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8 mars 2018, 15:06:08
+    Author     : ajall
+*/
+
+/** @section LAYOUT ---
+* Conteneur global / #main
+* En-tête / header
+* Contenu principal / #main
+* contenu secondaire / aside
+* Pied de page / footer
+
+*/
+#main, #header, .footer{
+   // width : 83.015873%;
+   // max-width: 1260px;
+
+}
+
+.home section {
+    justify-content: center;
+}
+
+.accueil-container{
+   
+}
+.article-accueil{
+   width:38.6233269%;
+   max-width: 511px;
+
+}
+
+.aside-accueil, .article-conference{
+     width:32.53968253968%;
+     max-width: 404px;
+
+
+}
+
+
+
+footer{
+    background-color:$blue-500; 
+    color: $white;
+
+
+}
+
+.footer{
+    justify-content: center;
+    margin: auto;
+}
+

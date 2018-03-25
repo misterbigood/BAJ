@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8 mars 2018, 12:24:58
+    Author     : ajall
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8 mars 2018, 15:04:19
+    Author     : ajall
+*/
+.header-logo {
+  width: 19.8412698%;
+  min-width: 250px; }
+
+/*Boutons*/
+button {
+  background: #0DB6FF;
+  background-image: -webkit-linear-gradient(top, #0DB6FF, #0A89BF);
+  background-image: -moz-linear-gradient(top, #0DB6FF, #0A89BF);
+  background-image: -ms-linear-gradient(top, #0DB6FF, #0A89BF);
+  background-image: -o-linear-gradient(top, #0DB6FF, #0A89BF);
+  background-image: linear-gradient(to bottom, #0DB6FF, #0A89BF);
+  -webkit-border-radius: 36;
+  -moz-border-radius: 36;
+  border-radius: 36px;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none; }
+
+button:hover {
+  background: #0A89BF;
+  background-image: -webkit-linear-gradient(top, #0A89BF, #0CDFE8);
+  background-image: -moz-linear-gradient(top, #0A89BF, #0CDFE8);
+  background-image: -ms-linear-gradient(top, #0A89BF, #0CDFE8);
+  background-image: -o-linear-gradient(top, #0A89BF, #0CDFE8);
+  background-image: linear-gradient(to bottom, #0A89BF, #0CDFE8);
+  text-decoration: none; }
+
+/* Accueil */
+.footer-facebook {
+  width: 19,1204%; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8 mars 2018, 15:08:14
+    Author     : ajall
+*/
+/* Main nav*/
+.main-nav ul {
+  list-style-type: circle;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 56;
+  line-height: 1.5; }
+  .main-nav ul a {
+    text-decoration: none; }
+
+.main-nav ul {
+  justify-content: center; }
+
+.tags-links {
+  font-size: 1.2rem;
+  font-weight: 200;
+  text-transform: uppercase; }
+
+.footer ul {
+  list-style-type: none; }
+
+.footer li::after {
+  content: "|";
+  padding-left: 2.25rem; }
+
+.footer ul li a, .footer a {
+  letter-spacing: 50;
+  color: #fff;
+  text-decoration: none; }
+
+.footer ul li a:hover, .footer a:hover {
+  letter-spacing: 50;
+  color: #02FF38;
+  text-decoration: none; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8 mars 2018, 15:06:08
+    Author     : ajall
+*/
+/** @section LAYOUT ---
+* Conteneur global / #main
+* En-t├¬te / header
+* Contenu principal / #main
+* contenu secondaire / aside
+* Pied de page / footer
+
+*/
+.home section {
+  justify-content: center; }
+
+.article-accueil {
+  width: 38.6233269%;
+  max-width: 511px; }
+
+.aside-accueil, .article-conference {
+  width: 32.53968253968%;
+  max-width: 404px; }
+
+footer {
+  background-color: #032E40;
+  color: #fff; }
+
+.footer {
+  justify-content: center;
+  margin: auto; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8 mars 2018, 15:06:54
+    Author     : ajall
+*/
+/** @section Typographie ---*/
+p::first-letter {
+  font-size: 130%;
+  font-weight: 700; }
+
+h1 {
+  font-weight: 400;
+  color: #032E40; }
+
+h1::after {
+  display: block;
+  content: url(../img/acolade.svg);
+  width: 208px;
+  margin: auto; }
+
+h2::before {
+  display: block;
+  content: url(../img/trait-vert.svg);
+  width: 84px; }
+
+h2 {
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #032E40; }
+
+h3 {
+  font-weight: 400;
+  color: #032E40; }
+
+h4 {
+  font-weight: 500;
+  color: #032E40; }
+
+h5 {
+  color: #032E40; }
+
+h6 {
+  color: #032E40; }
+
+figcaption {
+  font-size: 1.6rem;
+  color: #032E40; }
+
+/*# sourceMappingURL=style.css.map */
