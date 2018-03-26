@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$blue-500".
-        on line 59 of E:\christophe\NetBeansProjects\Balade aux jardins\scss\mdf\layout.scss
+        on line 59 of C:\Users\chris\Documents\NetBeansProjects\BAJ\scss\mdf\layout.scss
 
 54: 
 55: }
@@ -15,51 +15,51 @@ Error: Undefined variable: "$blue-500".
 64:     justify-content: center;
 
 Backtrace:
-E:\christophe\NetBeansProjects\Balade aux jardins\scss\mdf\layout.scss:59
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:430:in `map'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/engine.rb:295:in `render_with_sourcemap'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/exec/sass_scss.rb:410:in `run'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/bin/sass:13:in `<top (required)>'
-C:/Ruby22/bin/sass:23:in `load'
-C:/Ruby22/bin/sass:23:in `<main>'
+C:\Users\chris\Documents\NetBeansProjects\BAJ\scss\mdf\layout.scss:59
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/bin/sass:13:in `<top (required)>'
+C:/Ruby24-x64/bin/sass:23:in `load'
+C:/Ruby24-x64/bin/sass:23:in `<main>'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blue-500\".\A         on line 59 of E:\christophe\NetBeansProjects\Balade aux jardins\scss\mdf\layout.scss\A \A 54: \A 55: }\A 56: \A 57: \A 58: .site-footer{\A 59:     background-color:$blue-500; \A 60:     color: $white;\A 61: }\A 62: \A 63: .site-footer{\A 64:     justify-content: center;"; }
+  content: "Error: Undefined variable: \"$blue-500\".\A         on line 59 of C:\Users\chris\Documents\NetBeansProjects\BAJ\scss\mdf\layout.scss\A \A 54: \A 55: }\A 56: \A 57: \A 58: .site-footer{\A 59:     background-color:$blue-500; \A 60:     color: $white;\A 61: }\A 62: \A 63: .site-footer{\A 64:     justify-content: center;"; }

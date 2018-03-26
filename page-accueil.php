@@ -27,8 +27,28 @@ get_header(); ?>
                             endwhile; // End of the loop.
                             ?>
                     <section class="section-2 grid-2 has-gutter">
-                        <div>Contenu 1, faut-il le sortir du loop ou est-ce juste une page ?</div>
-                        <div>Contenu 2, une page ?</div>
+                        <div>
+                            <h2>Prochaînes visites pour les particuliers</h2>
+                            Loop ur l'agenda custom_post_type a priori
+                        </div>
+                        <div>
+                            <?php
+                            $the_slug = 'les-conferences';
+                            $args = array(
+                              'name'        => $the_slug,
+                              'post_type'   => 'page',
+                              'post_status' => 'publish',
+                              'numberposts' => 1
+                            );
+                            $my_posts = get_posts($args);
+                            if( $my_posts ) :
+                              echo 'ID on the first post found ' . $my_posts[0]->ID;
+                            endif;
+                            ?>
+                            
+                            <h2><?php echo $my_posts[0]->name?></h2>
+                            Plutôt la page "Les conférences" à intégrer ici
+                        </div>
                     </section>
 
 		</main><!-- #main -->
