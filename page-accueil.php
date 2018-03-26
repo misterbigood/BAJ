@@ -17,21 +17,42 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
                     <span class="signal">page-accueil</span>
-                    
-                       
+                    <h1 class="">Accueil</h1>
+                    <section class="section-1 grid-2 has-gutter-xl"> <!-- Première section, fond blanc, deux colonnes -->
+                        <div><!-- Première colonne - Affichage de la page Accueil ; page modifiable dans l'admin de wordpress -->
                             <?php
                             while ( have_posts() ) : the_post();
+                             ?>
+                                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                                    <div class="entry-content">
+                                            <?php
+                                                    the_content();
 
-                                    get_template_part( 'template-parts/content', 'page' );
+                                                    wp_link_pages( array(
+                                                            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'baladesauxjardins' ),
+                                                            'after'  => '</div>',
+                                                    ) );
+                                            ?>
+                                    </div><!-- .entry-content -->
 
+                                </article><!-- #post-<?php the_ID(); ?> -->
+                            <?php 
                             endwhile; // End of the loop.
                             ?>
-                    <section class="section-2 grid-2 has-gutter">
-                        <div>
-                            <h2>Prochaînes visites pour les particuliers</h2>
+                        </div><!-- Fin d'affichage de la page Accueil -->
+                        <div> <!-- Deuxième colonne - Partie fixe -->
+                            Vous souhaitez organiser une visite pour un groupe ?
+                            <button>Découvrez toutes les visites</button>
+                            Choisissez une balade dans le catalogue et contactez moi pour me communiquer la date et l'horaire souhaités.
+                        </div> <!-- Fin d'affichage de la partie fixe -->
+                    </section><!-- Fin de première section -->
+                    
+                    <section class="section-2 grid-2 has-gutter"> <!-- Deuxième section, fond bleu pâle, deux colonnes -->
+                        <div> <!-- Première colonne - Affichage des cinq derniers RDV à l'agenda -->
+                            <h2>Prochaines visites pour les particuliers</h2>
                             Loop ur l'agenda custom_post_type a priori
-                        </div>
-                        <div>
+                        </div> <!-- Fin d'affichage des derniers RDV à l'agenda -->
+                        <div> <!-- Deuxième colonne - Affichage de la page Les conférences; page modifiable dans l'admin de wordpress -->
                             <?php
                             $the_slug = 'les-conferences';
                             $args = array(
@@ -41,15 +62,21 @@ get_header(); ?>
                               'numberposts' => 1
                             );
                             $my_posts = get_posts($args);
-                            if( $my_posts ) :
-                              echo 'ID on the first post found ' . $my_posts[0]->ID;
-                            endif;
+                            foreach( $my_posts as $post ) :
+                                setup_postdata($post);
                             ?>
+                            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                                <header class="entry-header">
+                                    <h2 class='h2-blue'><?php the_title();?></h2>
+                                </header><!-- .entry-header -->
+                                <div class="entry-content">
+                                        <?php the_content(); ?>
+                                </div><!-- .entry-content -->
+                            </article>
+                            <?php endforeach; ?>
                             
-                            <h2><?php echo $my_posts[0]->name?></h2>
-                            Plutôt la page "Les conférences" à intégrer ici
-                        </div>
-                    </section>
+                        </div> <!-- Fin d'affichage de la page Les conférences -->
+                    </section> <!-- Fin de deuxième section -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
