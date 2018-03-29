@@ -50,7 +50,17 @@ get_header(); ?>
                     <section class="section-2 grid-2 has-gutter"> <!-- Deuxième section, fond bleu pâle, deux colonnes -->
                         <div> <!-- Première colonne - Affichage des cinq derniers RDV à l'agenda -->
                             <h2>Prochaines visites pour les particuliers</h2>
-                            Loop ur l'agenda custom_post_type a priori
+                            <?php $loop = new WP_Query( array( 'post_type' => 'agenda', 'posts_per_page' => 6, 'category' => 'current' ) ); ?>
+                            <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                            <div class="pindex">
+                                <div class="pimage">
+                                    <a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {the_post_thumbnail();} ?></a>
+                                </div>
+                                <div class="ptitle">
+                                    <h3><?php echo get_the_title(); ?></h3>
+                                </div>
+                            </div>
+                            <?php endwhile; wp_reset_query(); ?>
                         </div> <!-- Fin d'affichage des derniers RDV à l'agenda -->
                         <div> <!-- Deuxième colonne - Affichage de la page Les conférences; page modifiable dans l'admin de wordpress -->
                             <?php

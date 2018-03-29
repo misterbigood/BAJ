@@ -17,6 +17,12 @@ and open the template in the editor.
   width: 19.8412698%;
   min-width: 250px; }
 
+/* Incrustations vid├®o iframe */
+iframe {
+  width: 100%;
+  max-height: 100%;
+  margin: 0; }
+
 /*Boutons*/
 button {
   background: #0DB6FF;
