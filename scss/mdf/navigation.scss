@@ -47,6 +47,7 @@ and open the template in the editor.
             padding-right: .3em;
             content: url('../img/menu-off.png');
         }
+        
     }
     
     li.current-page-item, li.current-menu-item, li.current-category-ancestor {
@@ -91,33 +92,47 @@ and open the template in the editor.
 .footer-navigation {
     
     text-align: center;
+    margin-top: 50px;
     
     ul {
-    list-style-type: none;
-    font-size:1.8rem;
-    font-weight: $weight-medium;
-    letter-spacing: 56;
-    line-height: $line-height-base;
-    }
-    
-    a {
-        text-decoration:none;
-        :hover {
-            letter-spacing: 50;
-            color:$green-500;
-            text-decoration:none;
+        list-style-type: none;
+        font-size:1.6rem;
+        font-weight: $weight-regular;
+        letter-spacing: 50;
+        line-height: $line-height-base;
+
+        li {
+            display: inline-block;
+            :after {
+                color: white;
+                content:"|";
+                padding-left: $spacer-medium;
+                padding-right: $spacer-medium;
+            }
+            
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+            a:hover{            
+                color:#02FF38;
+                text-decoration:none;
+            }
         }
-    }
-    
-    li {
-        display: inline-block;
         
-        ::after {
-            content:"|";
-            padding-left: $spacer-medium;
+        li.current-menu-item, li.current-page-item {
+            color:#02FF38;
         }
     }
     
-}
+    li:last-child {
+      
+        :after {
+            content: none;
+        } 
+    } 
+    
+    
+ }
 
 

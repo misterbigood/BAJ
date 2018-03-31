@@ -26,6 +26,12 @@ iframe {
     margin: 0;
 }
 
+/* Images réseaux sociaux */
+.reseau-social {
+    width: 100%;
+    max-width: 100px;
+}
+
 
 /*Boutons*/
 button {
@@ -42,6 +48,12 @@ button {
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 }
+
+.entry-content blockquote::before {
+        font-size: 12rem;
+        top: -1rem;
+        left: -6rem;
+    }
 
 button:hover {
   background: #0A89BF;
@@ -61,13 +73,11 @@ button:hover {
     }
 }
 
-.section-2 {
+.section-2, .section-2-container {
     background-color: #ddf8e3;
 }
 
-
-
-.footer-facebook{
-    width: 19,1204%;
+.site-footer{
+    background-color:$blue-500; 
+    color: $white;
 }
-

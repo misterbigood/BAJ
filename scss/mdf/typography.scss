@@ -10,6 +10,12 @@ and open the template in the editor.
 
 /** @section Typographie ---*/
 
+footer {
+    color: white;
+    font-weight: normal;
+    
+}
+
 p::first-letter {
     font-size: 130%;
     font-weight:$weight-bold;

@@ -32,6 +32,11 @@ iframe {
   max-height: 100%;
   margin: 0; }
 
+/* Images r├®seaux sociaux */
+.reseau-social {
+  width: 100%;
+  max-width: 100px; }
+
 /*Boutons*/
 button {
   background: #0DB6FF;
@@ -47,6 +52,11 @@ button {
   padding: 10px 20px 10px 20px;
   text-decoration: none; }
 
+.entry-content blockquote::before {
+  font-size: 12rem;
+  top: -1rem;
+  left: -6rem; }
+
 button:hover {
   background: #0A89BF;
   background-image: -webkit-linear-gradient(top, #0A89BF, #0CDFE8);
@@ -61,11 +71,12 @@ button:hover {
   .etiquette-visite a, .etiquette-visite a:hover, .etiquette-visite a:focus {
     text-decoration: none; }
 
-.section-2 {
+.section-2, .section-2-container {
   background-color: #ddf8e3; }
 
-.footer-facebook {
-  width: 19,1204%; }
+.site-footer {
+  background-color: #032E40;
+  color: #fff; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -126,24 +137,31 @@ and open the template in the editor.
 
 /* Navigation footer */
 .footer-navigation {
-  text-align: center; }
+  text-align: center;
+  margin-top: 50px; }
   .footer-navigation ul {
     list-style-type: none;
-    font-size: 1.8rem;
-    font-weight: 500;
-    letter-spacing: 56;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 50;
     line-height: 1.5; }
-  .footer-navigation a {
-    text-decoration: none; }
-    .footer-navigation a :hover {
-      letter-spacing: 50;
-      color: #02FF38;
-      text-decoration: none; }
-  .footer-navigation li {
-    display: inline-block; }
-    .footer-navigation li ::after {
-      content: "|";
-      padding-left: 2.25rem; }
+    .footer-navigation ul li {
+      display: inline-block; }
+      .footer-navigation ul li :after {
+        color: white;
+        content: "|";
+        padding-left: 2.25rem;
+        padding-right: 2.25rem; }
+      .footer-navigation ul li a {
+        color: inherit;
+        text-decoration: none; }
+      .footer-navigation ul li a:hover {
+        color: #02FF38;
+        text-decoration: none; }
+    .footer-navigation ul li.current-menu-item, .footer-navigation ul li.current-page-item {
+      color: #02FF38; }
+  .footer-navigation li:last-child :after {
+    content: none; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -162,33 +180,83 @@ and open the template in the editor.
 * Pied de page / footer
 
 */
-.site {
-  width: 83.015873%;
-  margin: auto;
-  max-width: 1260px; }
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap; }
+
+.flex-col-1 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0; }
+
+.flex-col-2 {
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: 0; }
+
+.flex-col-3 {
+  flex-grow: 3;
+  flex-shrink: 3;
+  flex-basis: 0; }
+
+.flex-col-4 {
+  flex-grow: 4;
+  flex-shrink: 4;
+  flex-basis: 0; }
+
+.flex-col-5 {
+  flex-grow: 5;
+  flex-shrink: 5;
+  flex-basis: 0; }
+
+.flex-col-6 {
+  flex-grow: 6;
+  flex-shrink: 6;
+  flex-basis: 0; }
+
+.flex-col-7 {
+  flex-grow: 7;
+  flex-shrink: 7;
+  flex-basis: 0; }
+
+.flex-col-8 {
+  flex-grow: 8;
+  flex-shrink: 8;
+  flex-basis: 0; }
+
+.flex-col-9 {
+  flex-grow: 9;
+  flex-shrink: 9;
+  flex-basis: 0; }
 
 .site-header {
+  width: auto;
+  max-width: 1046px;
+  margin: auto;
   text-align: center; }
 
-.home section {
-  justify-content: center; }
-
-.article-accueil {
-  width: 38.6233269%;
-  max-width: 511px; }
-
-.aside-accueil, .article-conference {
-  width: 32.53968253968%;
-  max-width: 404px; }
-
-.site-footer {
-  background-color: #032E40;
-  color: #fff; }
-
-.site-footer {
-  justify-content: center;
+.section-1, .section-2 {
+  width: auto;
+  max-width: 1046px;
   margin: auto; }
 
+/*.section-2 div:first-child {
+    padding-left: 3em;
+}*/
+.entry-content blockquote {
+  padding-left: 0; }
+
+.site-footer section {
+  width: auto;
+  max-width: 1046px;
+  justify-content: center;
+  margin: auto;
+  padding: 2.0rem 0; }
+
+/*.site-footer section div:first-child {
+    padding-left: 3em;
+}*/
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -199,6 +267,10 @@ and open the template in the editor.
     Author     : ajall
 */
 /** @section Typographie ---*/
+footer {
+  color: white;
+  font-weight: normal; }
+
 p::first-letter {
   font-size: 130%;
   font-weight: 700; }

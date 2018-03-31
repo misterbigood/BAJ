@@ -119,8 +119,8 @@ add_action( 'widgets_init', 'baladesauxjardins_widgets_init' );
  * Enqueue scripts and styles.
  */
 function baladesauxjardins_scripts() {
-	wp_enqueue_style( 'baladesauxjardins-style', get_stylesheet_uri() );
-
+	wp_enqueue_style( 'baladesauxjardins-style', get_stylesheet_uri() );    
+        wp_enqueue_style( 'baladesauxjardins-flexSlider-style', get_template_directory_uri() . '/flexSlider/flexslider.css' );    
 	wp_enqueue_script( 'baladesauxjardins-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'baladesauxjardins-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -254,7 +254,6 @@ function reference_custom_post_type() {
 }
 
 add_action( 'init', 'reference_custom_post_type', 0 );
-
 
 /**
  * Implement the Custom Header feature.

@@ -1,61 +1,62 @@
-@charset "UTF-8";
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+Error: Undefined variable: "$blue-500".
+        on line 81 of E:\christophe\NetBeansProjects\Balade aux jardins\scss\mdf\elements.scss
+
+76: .section-2, .section-2-container {
+77:     background-color: #ddf8e3;
+78: }
+79: 
+80: .site-footer{
+81:     background-color:$blue-500; 
+82:     color: $white;
+83: }
+
+Backtrace:
+E:\christophe\NetBeansProjects\Balade aux jardins\scss\mdf\elements.scss:81
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:430:in `map'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/engine.rb:295:in `render_with_sourcemap'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/exec/sass_scss.rb:410:in `run'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/bin/sass:13:in `<top (required)>'
+C:/Ruby22/bin/sass:23:in `load'
+C:/Ruby22/bin/sass:23:in `<main>'
 */
-/* 
-    Created on : 8 mars 2018, 15:04:19
-    Author     : ajall
-*/
-/*A d├®truire*/
-.signal {
-  color: red; }
-
-/* Logo */
-.custom-logo {
-  width: 19.8412698%;
-  min-width: 250px; }
-
-/* Incrustations vid├®o iframe */
-iframe {
-  width: 100%;
-  max-height: 100%;
-  margin: 0; }
-
-/*Boutons*/
-button {
-  background: #0DB6FF;
-  background-image: -webkit-linear-gradient(top, #0DB6FF, #0A89BF);
-  background-image: -moz-linear-gradient(top, #0DB6FF, #0A89BF);
-  background-image: -ms-linear-gradient(top, #0DB6FF, #0A89BF);
-  background-image: -o-linear-gradient(top, #0DB6FF, #0A89BF);
-  background-image: linear-gradient(to bottom, #0DB6FF, #0A89BF);
-  -webkit-border-radius: 36;
-  -moz-border-radius: 36;
-  border-radius: 36px;
-  color: #ffffff;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none; }
-
-button:hover {
-  background: #0A89BF;
-  background-image: -webkit-linear-gradient(top, #0A89BF, #0CDFE8);
-  background-image: -moz-linear-gradient(top, #0A89BF, #0CDFE8);
-  background-image: -ms-linear-gradient(top, #0A89BF, #0CDFE8);
-  background-image: -o-linear-gradient(top, #0A89BF, #0CDFE8);
-  background-image: linear-gradient(to bottom, #0A89BF, #0CDFE8);
-  text-decoration: none; }
-
-.etiquette-visite {
-  text-transform: uppercase; }
-  .etiquette-visite a, .etiquette-visite a:hover, .etiquette-visite a:focus {
-    text-decoration: none; }
-
-.section-2 {
-  background-color: #ddf8e3; }
-
-.footer-facebook {
-  width: 19,1204%; }
-
-/*# sourceMappingURL=elements.css.map */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$blue-500\".\A         on line 81 of E:\christophe\NetBeansProjects\Balade aux jardins\scss\mdf\elements.scss\A \A 76: .section-2, .section-2-container {\A 77:     background-color: #ddf8e3;\A 78: }\A 79: \A 80: .site-footer{\A 81:     background-color:$blue-500; \A 82:     color: $white;\A 83: }"; }

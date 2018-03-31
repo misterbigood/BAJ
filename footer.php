@@ -11,11 +11,14 @@
 
 ?>
 
-	</div><!-- #content -->
+	
+</div><!-- #page -->
 
 	<footer id="colophon" class="site-footer">
-                <nav id="footer-site-navigation" class="footer-navigation">
-			<button class="menu-toggle" aria-controls="footer-menu" aria-expanded="false"><?php esc_html_e( 'Footer Menu', 'baladesauxjardins' ); ?></button>
+            <section class="flex-container">
+                <div class="flex-col-2">Suivez-moi sur:<br><a href=""><img src="<?php echo get_template_directory_uri();?>/img/facebook-baladesauxjardins.svg" class="reseau-social"></a></div>
+                <div class="flex-col-7">
+                  <nav id="footer-site-navigation" class="footer-navigation">
 			<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-2',
@@ -23,21 +26,39 @@
 				) );
 			?>
 		</nav><!-- #site-navigation -->
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'baladesauxjardins' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'baladesauxjardins' ), 'WordPress' );
-			?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'baladesauxjardins' ), 'baladesauxjardins', '<a href="http://underscores.me/">Underscores.me</a>' );
-			?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+                </div>              
+            </section>
+        </footer><!-- #colophon -->
+</div>
+
 
 <?php wp_footer(); ?>
+<script src="<?php bloginfo('template_url'); ?>/flexSlider/jquery.flexslider-min.js"></script>
+        <script type="text/javascript">
+            jQuery(window).load(function() {
+            jQuery('#carousel').flexslider({
+            animation: "slide",
+            controlNav: false,
+            animationLoop: false,
+            slideshow: false,
+            itemWidth: 150,
+            itemMargin: 5,
+            minItems: 2,
+            maxItems: 8,
+            asNavFor: '#slider'
+          });
 
+          jQuery('#slider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            animationLoop: false,
+            slideshow: false,
+            sync: "#carousel"
+          });
+        });  </script>
+
+        <script src="<?php bloginfo('template_url'); ?>/flexSlider/modernizr.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/flexSlider/jquery.easing.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/flexSlider/jquery.mousewheel.js"></script>
 </body>
 </html>

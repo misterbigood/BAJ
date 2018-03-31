@@ -17,51 +17,87 @@ and open the template in the editor.
 
 */
 
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
 
-.site {
-    width: 83.015873%;
-    margin: auto;
-    max-width: 1260px;
+.flex-col-1 {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+.flex-col-2 {
+    flex-grow: 2;
+    flex-shrink: 2;
+    flex-basis: 0;
+}
+.flex-col-3 {
+    flex-grow: 3;
+    flex-shrink: 3;
+    flex-basis: 0;
+}
+.flex-col-4 {
+    flex-grow: 4;
+    flex-shrink: 4;
+    flex-basis: 0;
+}
+.flex-col-5 {
+    flex-grow: 5;
+    flex-shrink: 5;
+    flex-basis: 0;
+}
+.flex-col-6 {
+    flex-grow: 6;
+    flex-shrink: 6;
+    flex-basis: 0;
+}
+.flex-col-7 {
+    flex-grow: 7;
+    flex-shrink: 7;
+    flex-basis: 0;
+}
+.flex-col-8 {
+    flex-grow: 8;
+    flex-shrink: 8;
+    flex-basis: 0;
+}
+.flex-col-9 {
+    flex-grow: 9;
+    flex-shrink: 9;
+    flex-basis: 0;
 }
 
 .site-header {
+    width: auto;
+    max-width: $large;
+    margin: auto;
     text-align: center;
 }
 
-#main, #header, .footer{
-   // width : 83.015873%;
-   // max-width: 1260px;
-
-}
-
-.home section {
-    justify-content: center;
-}
-
-.accueil-container{
-   
-}
-.article-accueil{
-   width:38.6233269%;
-   max-width: 511px;
-
-}
-
-.aside-accueil, .article-conference{
-     width:32.53968253968%;
-     max-width: 404px;
-
-
-}
-
-
-.site-footer{
-    background-color:$blue-500; 
-    color: $white;
-}
-
-.site-footer{
-    justify-content: center;
+.section-1, .section-2 {
+    width: auto;
+    max-width: $large;
     margin: auto;
 }
 
+/*.section-2 div:first-child {
+    padding-left: 3em;
+}*/
+
+.entry-content blockquote {
+        padding-left: 0;
+    }
+
+.site-footer section {
+    width: auto;
+    max-width: $large;
+    justify-content: center;
+    margin: auto;
+    padding: 2.0rem 0;
+}
+
+/*.site-footer section div:first-child {
+    padding-left: 3em;
+}*/
