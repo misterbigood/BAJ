@@ -88,10 +88,17 @@ button:hover {
 
 .etiquette-visite {
     text-transform: uppercase;
+    font-weight:$weight-light;
+    font-size: 0.8em;
     
     a, a:hover, a:focus  {
         text-decoration: none;
     }
+}
+
+.etiquette-visite ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 .section-2, .section-2-container {
@@ -104,7 +111,4 @@ button:hover {
 }
 
 
-.site-footer{
-    background-color:$blue-500; 
-    color: $white;
-}
+

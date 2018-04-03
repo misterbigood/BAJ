@@ -8,7 +8,7 @@
  */
 ?>
 <span class="signal">template part visite</span>
-<div class="section-1">
+<div class="section-1 visite">
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <header class="entry-header">
             <?php

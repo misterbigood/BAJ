@@ -28,7 +28,7 @@ get_header(); ?>
                             </nav><!-- #site-navigation -->
                             
 			</header><!-- .page-header -->
-                        <div class="section-1">
+                        <div class="section-1 les-visites">
                         <section class="grid-3 has-gutter-xl">
 			<?php
 			/* Start the Loop */
@@ -37,7 +37,7 @@ get_header(); ?>
                             <div>
                                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                                     <header class="entry-header">
-                                        <a href="<?php the_permalink();?>"><?php the_title( '<h2 class="entry-title">', '</h2>' );?></a>
+                                        <a href="<?php the_permalink();?>"><?php the_title( '<h2 class="entry-title mtm">', '</h2>' );?></a>
                                     <span class="etiquette-visite"><?php the_category();?></span>
                                     
                                     </header><!-- .entry-header -->

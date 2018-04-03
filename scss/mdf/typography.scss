@@ -80,6 +80,20 @@ h2{
     color: $color-brand;
 }
 
+.les-visites h2{
+     text-transform:none;
+     font-size:1.8rem;
+}
+
+.les-visites h2::before{
+    display:none;
+}
+
+.les-visites .entry-header a{
+     text-decoration: none;
+}
+
+
 h3{font-weight: $weight-regular ;
 
    color: $color-brand;

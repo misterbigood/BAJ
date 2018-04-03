@@ -115,6 +115,11 @@ and open the template in the editor.
 .entry-content blockquote {
         padding-left: 0;
     }
+    
+  .site-footer{
+    background-color:$blue-500; 
+    color: $white;
+}
 
 .site-footer section {
     width: auto;
