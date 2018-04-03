@@ -242,12 +242,28 @@ function initialisation_metaboxes() {
     add_meta_box("sub_colonne_2", "Colonne #2", "meta_function_colonne_2", "post");
 }
 function meta_function_colonne_2() {
+    wp_nonce_field(basename(__FILE__), "meta-box-nonce");
     global $post;
     $custom = get_post_custom($post->ID);
     $sub_colonne_2 = $custom["sub_colonne_2"][0];
-    wp_editor( $sub_colonne_2, 'colonne_2', $settings =
-array('textarea_name'=>'sub_colonne_2','dfw'=>true) );
+    wp_editor( $sub_colonne_2, 'colonne_2', $settings = array('textarea_name'=>'sub_colonne_2','dfw'=>true) );
 }
+function save_custom_meta_box($post_id, $post_object) {
+    if (!isset($_POST["meta-box-nonce"]) || !wp_verify_nonce($_POST["meta-box-nonce"], basename(__FILE__)))
+        return $post_id;
+
+    if(!current_user_can("edit_post", $post_id))
+        return $post_id;
+
+    if(defined("DOING_AUTOSAVE") && DOING_AUTOSAVE)
+        return $post_id;
+    
+    if(isset($_POST["sub_colonne_2"]))
+    {
+         update_post_meta( $post_id, 'sub_colonne_2', $_POST['sub_colonne_2'] );
+    }  
+}
+add_action("save_post", "save_custom_meta_box", 10, 3);
 
 /**
  * Implement the Custom Header feature.

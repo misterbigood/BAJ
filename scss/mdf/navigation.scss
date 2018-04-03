@@ -155,8 +155,14 @@ and open the template in the editor.
             content: none;
         } 
     } 
-    
-    
+ }
+ 
+ .nav-previous {
+     background: url('../img/fleche-gauche.png') no-repeat;
+ }
+ 
+ .nav-next {
+     background: url('../img/fleche-droite.png') no-repeat;
  }
 
 

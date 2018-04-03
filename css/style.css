@@ -85,6 +85,10 @@ button:hover {
 .section-2, .section-2-container {
   background-color: #ddf8e3; }
 
+.contact-visite {
+  color: black;
+  text-align: center; }
+
 .site-footer {
   background-color: #032E40;
   color: #fff; }
@@ -187,6 +191,12 @@ and open the template in the editor.
       color: #02FF38; }
   .footer-navigation li:last-child :after {
     content: none; }
+
+.nav-previous {
+  background: url("../img/fleche-gauche.png") no-repeat; }
+
+.nav-next {
+  background: url("../img/fleche-droite.png") no-repeat; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
