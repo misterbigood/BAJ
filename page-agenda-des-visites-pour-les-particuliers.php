@@ -14,9 +14,9 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area" style="border: solid 1px #000">
 		<main id="main" class="site-main">
-                    <span class="signal">page</span>
+
 			<?php
 			while ( have_posts() ) : the_post();
 

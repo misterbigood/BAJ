@@ -18,7 +18,8 @@ get_header(); ?>
 		<main id="main" class="site-main">
                     <span class="signal">page-accueil</span>
                     <h1 class="">Accueil</h1>
-                    <section class="section-1 flex-container"> <!-- Première section, fond blanc, deux colonnes -->
+                    <div class="section-1">
+                    <section class="grid-9 has-gutter-xl"> <!-- Première section, fond blanc, deux colonnes -->
                         <div class="flex-col-5"><!-- Première colonne - Affichage de la page Accueil ; page modifiable dans l'admin de wordpress -->
                             <?php
                             while ( have_posts() ) : the_post();
@@ -46,21 +47,21 @@ get_header(); ?>
                             <p class="u-small">Choisissez une balade dans le catalogue et contactez moi pour me communiquer la date et l'horaire souhaités.</p>
                         </div> <!-- Fin d'affichage de la partie fixe -->
                     </section><!-- Fin de première section -->
+                    </div>
                     <div class="section-2-container">
-                    <section class="section-2 flex-container"> <!-- Deuxième section, fond bleu pâle, deux colonnes -->
+                    <section class="section-2 grid-9"> <!-- Deuxième section, fond bleu pâle, deux colonnes -->
                         <div class="flex-col-5"> <!-- Première colonne - Affichage des cinq derniers RDV à l'agenda -->
                             <h2>Prochaines visites pour les particuliers</h2>
                             <?php $loop = new WP_Query( array( 'post_type' => 'agenda', 'posts_per_page' => 6, 'category' => 'current' ) ); ?>
                             <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                            <div class="pindex">
-                                <div class="pimage">
-                                    <a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {the_post_thumbnail();} ?></a>
-                                </div>
-                                <div class="ptitle">
-                                    <h3><?php echo get_the_title(); ?></h3>
-                                </div>
-                            </div>
+                            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                                    <?php  $content=get_the_content();
+                                            $content = apply_filters( 'the_content', $content );
+                                            $content = str_replace( ']]>', ']]&gt;', $content );
+                                            echo $content; ?>
+                            </article>
                             <?php endwhile; wp_reset_query(); ?>
+                            <footer><a href="<?php echo get_home_url()."/rendez-vous";?>">Consultez l'agenda des visites pour les particuliers</a></footer>
                         </div> <!-- Fin d'affichage des derniers RDV à l'agenda -->
                         <div class="flex-col-4"> <!-- Deuxième colonne - Affichage de la page Les conférences; page modifiable dans l'admin de wordpress -->
                             <?php

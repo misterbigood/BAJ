@@ -9,7 +9,6 @@ and open the template in the editor.
 */
 
 /** @section LAYOUT ---
-* Conteneur global / #main
 * En-tête / header
 * Contenu principal / #main
 * contenu secondaire / aside
@@ -17,11 +16,36 @@ and open the template in the editor.
 
 */
 
-.flex-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
+/* ------------------------------------------------- Gestion du responsive /
+** ------------------------------------------------- taille écran ----------
+** Deux breakpoints & 3 formats
+** $medium & $large
+** écran <$medium, $medium< écran < $large, $large < écran
+** Insérer ici les modifications des éléments de navigation éventuellement 
+** affectés par la taille d'écran
+*/
+@media (min-width: $large) {
+    [class*="flex-col-"] {
+        padding: 0.5rem;
+    }
 }
+
+@media (min-width: $medium) and (max-width: ($large - 1)) {
+    [class*="flex-col-"] {
+    padding: 1rem;
+}
+}
+
+@media (max-width: ($medium - 1)) {
+    [class*="flex-col-"] {
+    padding: 1.5rem;
+}
+}
+
+/* ------------------------------------------------- Fin partie responsive -
+** -------------------------------------------------------------------------
+*/
+
 
 .flex-col-1 {
     flex-grow: 1;
@@ -68,6 +92,8 @@ and open the template in the editor.
     flex-shrink: 9;
     flex-basis: 0;
 }
+
+
 
 .site-header {
     width: auto;

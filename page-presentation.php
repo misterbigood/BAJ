@@ -17,8 +17,9 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
                     <span class="signal">page-presentation</span>
-                    <section class="section-1 grid-3 has-gutter-l">
-                        <div>
+                    <div class="section-1">
+                    <section class="grid-7 has-gutter-xl">
+                        <div class="flex-col-3">
                         <?php
                             $the_slug = 'votre-conferencier';
                             $args = array(
@@ -41,10 +42,10 @@ get_header(); ?>
                             </article>
                             <?php endforeach; ?>
                         </div>
-                        <div class="col-2">
+                        <div class="flex-col-4">
                             <h2>On en parle</h2>
                             <?php $loop = new WP_Query( array( 'post_type' => 'reference', 'posts_per_page' => 4, 'category' => 'current' ) ); ?>
-                            <section class="section 2-1 grid-2 has-gutter-l">
+                            <section class="grid-2 has-gutter-l">
                                 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                                 <div>
                                     <h3><?php echo get_the_title(); ?></h3>

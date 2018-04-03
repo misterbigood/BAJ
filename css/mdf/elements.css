@@ -1,32 +1,28 @@
 /*
-Error: Undefined variable: "$blue-500".
-        on line 81 of E:\christophe\NetBeansProjects\Balade aux jardins\scss\mdf\elements.scss
+Error: Undefined variable: "$large".
+        on line 24 of E:\wamp\www\baladadesauxjardins.fr\wp-content\themes\baladesauxjardins\scss\mdf\elements.scss
 
-76: .section-2, .section-2-container {
-77:     background-color: #ddf8e3;
-78: }
-79: 
-80: .site-footer{
-81:     background-color:$blue-500; 
-82:     color: $white;
-83: }
+19: ** $medium & $large
+20: ** ├®cran <$medium, $medium< ├®cran < $large, $large < ├®cran
+21: ** Ins├®rer ici les modifications des ├®l├®ments de navigation ├®ventuellement 
+22: ** affect├®s par la taille d'├®cran
+23: *\/
+24: @media (min-width: $large) {
+25:     
+26: }
+27: 
+28: @media (min-width: $medium) and (max-width: ($large - 1)) {
+29:     
 
 Backtrace:
-E:\christophe\NetBeansProjects\Balade aux jardins\scss\mdf\elements.scss:81
+E:\wamp\www\baladadesauxjardins.fr\wp-content\themes\baladesauxjardins\scss\mdf\elements.scss:24
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:430:in `map'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:536:in `block in run_interp_no_strip'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:534:in `map'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:534:in `run_interp_no_strip'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:541:in `run_interp'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:509:in `visit_media'
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.15/lib/sass/stack.rb:79:in `block in with_base'
@@ -59,4 +55,4 @@ C:/Ruby22/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blue-500\".\A         on line 81 of E:\christophe\NetBeansProjects\Balade aux jardins\scss\mdf\elements.scss\A \A 76: .section-2, .section-2-container {\A 77:     background-color: #ddf8e3;\A 78: }\A 79: \A 80: .site-footer{\A 81:     background-color:$blue-500; \A 82:     color: $white;\A 83: }"; }
+  content: "Error: Undefined variable: \"$large\".\A         on line 24 of E:\wamp\www\baladadesauxjardins.fr\wp-content\themes\baladesauxjardins\scss\mdf\elements.scss\A \A 19: ** $medium & $large\A 20: ** ├®cran <$medium, $medium< ├®cran < $large, $large < ├®cran\A 21: ** Ins├®rer ici les modifications des ├®l├®ments de navigation ├®ventuellement \A 22: ** affect├®s par la taille d'├®cran\A 23: */\A 24: @media (min-width: $large) {\A 25:     \A 26: }\A 27: \A 28: @media (min-width: $medium) and (max-width: ($large - 1)) {\A 29:     "; }

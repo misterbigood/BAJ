@@ -8,6 +8,17 @@ and open the template in the editor.
     Author     : ajall
 */
 
+
+
+
+/* ------------------------------------------------- Gestion du responsive /
+** ------------------------------------------------- taille écran ----------
+** Deux breakpoints & 3 formats
+** $medium & $large
+** écran <$medium, $medium< écran < $large, $large < écran
+** Insérer ici les modifications des éléments de navigation éventuellement 
+** affectés par la taille d'écran
+*/
 /* Gestion du toggle des menus */
 @include respond-to("medium") {
     ul[aria-expanded="false"] {
@@ -15,12 +26,25 @@ and open the template in the editor.
     }
 }
 
-@media (min-width: $medium)
-{
+@media (min-width: $large) {
+    .menu-toggle {
+          display: none;
+      }
+}
+
+@media (min-width: $medium) and (max-width: ($large - 1)) {
     .menu-toggle {
         display: none;
     }
 }
+
+@media (max-width: ($medium - 1)) {
+    
+}
+
+/* ------------------------------------------------- Fin partie responsive -
+** -------------------------------------------------------------------------
+*/
 
 /* Navigation principale */
     .main-navigation {
@@ -50,7 +74,7 @@ and open the template in the editor.
         
     }
     
-    li.current-page-item, li.current-menu-item, li.current-category-ancestor {
+    li.current-page-item, li.current-menu-item, li.current-category-ancestor, li.current-post-ancestor {
             ::before {
                 padding-right: .3em; 
                 content: url('../img/menu-on.png');

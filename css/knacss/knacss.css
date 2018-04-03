@@ -1128,7 +1128,7 @@ ul.is-unstyled, ul.unstyled {
 /* -------------------------- */
 /* large screens */
 /* ------------- */
-@media (min-width: 1046px) {
+@media (min-width: 900px) {
   /* layouts for large screens */
   .large-hidden {
     display: none !important; }
@@ -1176,7 +1176,7 @@ ul.is-unstyled, ul.unstyled {
     margin: 0 !important; } }
 /* medium screens */
 /* -------------- */
-@media (min-width: 768px) and (max-width: 1045px) {
+@media (min-width: 768px) and (max-width: 899px) {
   /* layouts for medium screens */
   .medium-hidden {
     display: none !important; }

@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-                    <span class="signal">category</span>
+                    <span class="signal">archives-visites</span>
                     
 		<?php
 		if ( have_posts() ) : ?>

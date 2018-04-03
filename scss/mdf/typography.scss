@@ -8,6 +8,30 @@ and open the template in the editor.
     Author     : ajall
 */
 
+/* ------------------------------------------------- Gestion du responsive /
+** ------------------------------------------------- taille écran ----------
+** Deux breakpoints & 3 formats
+** $medium & $large
+** écran <$medium, $medium< écran < $large, $large < écran
+** Insérer ici les modifications des éléments de navigation éventuellement 
+** affectés par la taille d'écran
+*/
+@media (min-width: $large) {
+    
+}
+
+@media (min-width: $medium) and (max-width: ($large - 1)) {
+    
+}
+
+@media (max-width: ($medium - 1)) {
+  
+}
+
+/* ------------------------------------------------- Fin partie responsive -
+** -------------------------------------------------------------------------
+*/
+
 /** @section Typographie ---*/
 
 footer {

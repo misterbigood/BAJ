@@ -159,11 +159,11 @@ function agenda_custom_post_type() {
 	// On peut définir ici d'autres options pour notre custom post type
 	
 	$args = array(
-		'label'               => __( 'Rendez-vous'),
+		'label'               => __( 'Agenda'),
 		'description'         => __( 'Agenda des visites et conférences'),
 		'labels'              => $labels,
 		// On définit les options disponibles dans l'éditeur de notre custom post type ( un titre, un auteur...)
-		'supports'            => array( 'title', 'custom-fields', 'author' ),
+		'supports'            => array( 'title', 'editor', 'thumbnail'),
 		/* 
 		* Différentes options supplémentaires
 		*/	
@@ -181,29 +181,7 @@ function agenda_custom_post_type() {
 
 add_action( 'init', 'agenda_custom_post_type', 0 );
 
-add_filter('manage_agenda_posts_columns', 'agenda_table_head');
-function agenda_table_head( $defaults ) {
-    
-    $defaults['agenda_date']  = 'Date';
-    $defaults['agenda_heure']    = 'Heure';
-    $defaults['agenda_partenaire']   = 'Partenaire';
-    return $defaults;
-}
 
-add_action( 'manage_agenda_posts_custom_column', 'agenda_table_content', 10, 2 );
-
-function agenda_table_content( $column_name, $post_id ) {
-    if ($column_name == 'agenda_date') {
-    echo get_post_meta( $post_id, 'Date', true );
-    }
-    if ($column_name == 'agenda_heure') {
-    echo get_post_meta( $post_id, 'Heure', true );
-    }
-    if ($column_name == 'agenda_partenaire') {
-    echo get_post_meta( $post_id, 'Partenaire', true );
-    }
-
-}
 
 /**
  * Implement the Custom Post Type Références
@@ -254,6 +232,22 @@ function reference_custom_post_type() {
 }
 
 add_action( 'init', 'reference_custom_post_type', 0 );
+
+/**
+ * Implement second editor in normal posts
+ */
+
+add_action('add_meta_boxes','initialisation_metaboxes');
+function initialisation_metaboxes() {
+    add_meta_box("sub_colonne_2", "Colonne #2", "meta_function_colonne_2", "post");
+}
+function meta_function_colonne_2() {
+    global $post;
+    $custom = get_post_custom($post->ID);
+    $sub_colonne_2 = $custom["sub_colonne_2"][0];
+    wp_editor( $sub_colonne_2, 'colonne_2', $settings =
+array('textarea_name'=>'sub_colonne_2','dfw'=>true) );
+}
 
 /**
  * Implement the Custom Header feature.

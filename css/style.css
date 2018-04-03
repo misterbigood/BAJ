@@ -21,6 +21,17 @@ and open the template in the editor.
 .signal {
   color: red; }
 
+/* ------------------------------------------------- Gestion du responsive /
+** ------------------------------------------------- taille ├®cran ----------
+** Deux breakpoints & 3 formats
+** $medium & $large
+** ├®cran <$medium, $medium< ├®cran < $large, $large < ├®cran
+** Ins├®rer ici les modifications des ├®l├®ments de navigation ├®ventuellement 
+** affect├®s par la taille d'├®cran
+*/
+/* ------------------------------------------------- Fin partie responsive -
+** -------------------------------------------------------------------------
+*/
 /* Logo */
 .custom-logo {
   width: 19.8412698%;
@@ -87,13 +98,27 @@ and open the template in the editor.
     Created on : 8 mars 2018, 15:08:14
     Author     : ajall
 */
+/* ------------------------------------------------- Gestion du responsive /
+** ------------------------------------------------- taille ├®cran ----------
+** Deux breakpoints & 3 formats
+** $medium & $large
+** ├®cran <$medium, $medium< ├®cran < $large, $large < ├®cran
+** Ins├®rer ici les modifications des ├®l├®ments de navigation ├®ventuellement 
+** affect├®s par la taille d'├®cran
+*/
 /* Gestion du toggle des menus */
 @media (max-width: 767px) {
   ul[aria-expanded="false"] {
     display: none; } }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .menu-toggle {
     display: none; } }
+@media (min-width: 768px) and (max-width: 899px) {
+  .menu-toggle {
+    display: none; } }
+/* ------------------------------------------------- Fin partie responsive -
+** -------------------------------------------------------------------------
+*/
 /* Navigation principale */
 .main-navigation {
   text-align: center; }
@@ -111,7 +136,7 @@ and open the template in the editor.
     .main-navigation li ::before {
       padding-right: .3em;
       content: url("../img/menu-off.png"); }
-  .main-navigation li.current-page-item ::before, .main-navigation li.current-menu-item ::before, .main-navigation li.current-category-ancestor ::before {
+  .main-navigation li.current-page-item ::before, .main-navigation li.current-menu-item ::before, .main-navigation li.current-category-ancestor ::before, .main-navigation li.current-post-ancestor ::before {
     padding-right: .3em;
     content: url("../img/menu-on.png"); }
 
@@ -173,18 +198,32 @@ and open the template in the editor.
     Author     : ajall
 */
 /** @section LAYOUT ---
-* Conteneur global / #main
 * En-t├¬te / header
 * Contenu principal / #main
 * contenu secondaire / aside
 * Pied de page / footer
 
 */
-.flex-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap; }
-
+/* ------------------------------------------------- Gestion du responsive /
+** ------------------------------------------------- taille ├®cran ----------
+** Deux breakpoints & 3 formats
+** $medium & $large
+** ├®cran <$medium, $medium< ├®cran < $large, $large < ├®cran
+** Ins├®rer ici les modifications des ├®l├®ments de navigation ├®ventuellement 
+** affect├®s par la taille d'├®cran
+*/
+@media (min-width: 900px) {
+  [class*="flex-col-"] {
+    padding: 0.5rem; } }
+@media (min-width: 768px) and (max-width: 899px) {
+  [class*="flex-col-"] {
+    padding: 1rem; } }
+@media (max-width: 767px) {
+  [class*="flex-col-"] {
+    padding: 1.5rem; } }
+/* ------------------------------------------------- Fin partie responsive -
+** -------------------------------------------------------------------------
+*/
 .flex-col-1 {
   flex-grow: 1;
   flex-shrink: 1;
@@ -232,13 +271,13 @@ and open the template in the editor.
 
 .site-header {
   width: auto;
-  max-width: 1046px;
+  max-width: 900px;
   margin: auto;
   text-align: center; }
 
 .section-1, .section-2 {
   width: auto;
-  max-width: 1046px;
+  max-width: 900px;
   margin: auto; }
 
 /*.section-2 div:first-child {
@@ -249,7 +288,7 @@ and open the template in the editor.
 
 .site-footer section {
   width: auto;
-  max-width: 1046px;
+  max-width: 900px;
   justify-content: center;
   margin: auto;
   padding: 2.0rem 0; }
@@ -265,6 +304,17 @@ and open the template in the editor.
 /* 
     Created on : 8 mars 2018, 15:06:54
     Author     : ajall
+*/
+/* ------------------------------------------------- Gestion du responsive /
+** ------------------------------------------------- taille ├®cran ----------
+** Deux breakpoints & 3 formats
+** $medium & $large
+** ├®cran <$medium, $medium< ├®cran < $large, $large < ├®cran
+** Ins├®rer ici les modifications des ├®l├®ments de navigation ├®ventuellement 
+** affect├®s par la taille d'├®cran
+*/
+/* ------------------------------------------------- Fin partie responsive -
+** -------------------------------------------------------------------------
 */
 /** @section Typographie ---*/
 footer {

@@ -8,7 +8,8 @@
  */
 
 ?>
-visite
+<span class="signal">template part visite</span>
+<div class="section-1">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
@@ -22,12 +23,14 @@ visite
 	</header><!-- .entry-header -->
         
         <!-- Début essai flexslider ------------------>
-        <div class="flex-container">
+        <div class="grid-3">
             <div class="flex-col-1">
-            <?php $fichiers = get_children("post_parent=$id&post_type=attachment&post_mime_type=image&orderby=menu_order&order=ASC"); ?>
+            <?php $fichiers = get_children("post_parent=$id&post_type=attachment&post_mime_type=image&orderby=menu_order&order=ASC");
+            if ($fichiers):?>
 	<div id="slider" class="flexslider">
 	<ul class="slides">
 	<?php 
+        
         foreach($fichiers as $fichier): ?>
                 <li>
             	<?php
@@ -56,18 +59,10 @@ visite
                 <?php endforeach; ?>
                 </ul>
         </div>
+                <?php endif; ?>
         </div>
-            <div class="flex-col-2">coucou</div>
-        </div>
-
-        
-
-
-
-
-	<!-- Fin essai flexslider -------------------------------->
-
-	<div class="entry-content">
+            <div class="flex-col-2">
+                <div class="entry-content">
 		<?php
 			the_content( sprintf(
 				wp_kses(
@@ -86,10 +81,30 @@ visite
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'baladesauxjardins' ),
 				'after'  => '</div>',
 			) );
+                        
 		?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php baladesauxjardins_entry_footer(); ?>
+		<?php //baladesauxjardins_entry_footer(); ?>
+                <?php the_post_navigation();
+
+			// If comments are open or we have at least one comment, load up the comment template.
+			if ( comments_open() || get_comments_number() ) :
+				comments_template();
+			endif;
+                ?>
 	</footer><!-- .entry-footer -->
+            </div>
+        </div>
+
+        
+
+
+
+
+	<!-- Fin essai flexslider -------------------------------->
+
+	
 </article><!-- #post-<?php the_ID(); ?> -->
+</div>
