@@ -10,7 +10,7 @@ and open the template in the editor.
 
 /*A détruire*/
 .signal {
-    color: red;
+    color: red; 
 }
 
 /* ------------------------------------------------- Gestion du responsive /
@@ -30,7 +30,7 @@ and open the template in the editor.
 }
 
 @media (max-width: ($medium - 1)) {
-    
+  
 }
 
 /* ------------------------------------------------- Fin partie responsive -
@@ -58,17 +58,12 @@ iframe {
 
 
 /*Boutons*/
-button {
+
+
+button{
   background: #0DB6FF;
-  background-image: -webkit-linear-gradient(top, #0DB6FF, #0A89BF);
-  background-image: -moz-linear-gradient(top, #0DB6FF, #0A89BF);
-  background-image: -ms-linear-gradient(top, #0DB6FF, #0A89BF);
-  background-image: -o-linear-gradient(top, #0DB6FF, #0A89BF);
-  background-image: linear-gradient(to bottom, #0DB6FF, #0A89BF);
-  -webkit-border-radius: 36;
-  -moz-border-radius: 36;
-  border-radius: 36px;
-  color: #ffffff;
+  border-radius: 36px!important;
+  color: #ffffff!important;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 }
@@ -81,6 +76,8 @@ button {
 
 button:hover {
   background: #0A89BF;
+  border-radius: 36px;
+  color:#fff;
   background-image: -webkit-linear-gradient(top, #0A89BF, #0CDFE8);
   background-image: -moz-linear-gradient(top, #0A89BF, #0CDFE8);
   background-image: -ms-linear-gradient(top, #0A89BF, #0CDFE8);
@@ -105,6 +102,8 @@ button:hover {
     color: black;
     text-align: center;
 }
+
+
 .site-footer{
     background-color:$blue-500; 
     color: $white;

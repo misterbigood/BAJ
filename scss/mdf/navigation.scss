@@ -103,12 +103,12 @@ and open the template in the editor.
         display: inline-block;
         padding: .5em;
         margin: 0 .5em;
-        background-color: #0CDFE8;
+        background-color: $water-green-200;
         border-radius: 10px;
     }
     
     li.current-page-item, li.current-menu-item {
-        background-color:limegreen;
+        background-color:$water-green-500;
     }
 }
 
