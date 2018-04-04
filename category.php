@@ -28,7 +28,7 @@ get_header(); ?>
                             </nav><!-- #site-navigation -->
                             
 			</header><!-- .page-header -->
-                        <div class="section-1 les-visites">
+                        <div class="section-1 les-visites mbl">
                         <section class="grid-3 has-gutter-xl">
 			<?php
 			/* Start the Loop */

@@ -48,7 +48,7 @@ get_header(); ?>
                         </div> <!-- Fin d'affichage de la partie fixe -->
                     </section><!-- Fin de première section -->
                     </div>
-                    <div class="section-2-container">
+                    <div class="section-2-container pbl">
                     <section class="section-2 grid-9"> <!-- Deuxième section, fond bleu pâle, deux colonnes -->
                         <div class="flex-col-5"> <!-- Première colonne - Affichage des cinq derniers RDV à l'agenda -->
                             <h2>Prochaines visites pour les particuliers</h2>

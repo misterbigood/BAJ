@@ -14,7 +14,7 @@
 	
 </div><!-- #page -->
 
-	<footer id="colophon" class="site-footer mtl">
+	<footer id="colophon" class="site-footer">
             <section class="flex-container">
                 <div class="flex-col-2">Suivez-moi sur:<br><a href=""><img src="<?php echo get_template_directory_uri();?>/img/facebook-baladesauxjardins.svg" class="reseau-social"></a></div>
                 <div class="flex-col-7">

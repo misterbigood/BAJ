@@ -112,6 +112,9 @@ and open the template in the editor.
     }
 }
 
+
+
+
 /* Navigation footer */
 .footer-navigation {
     
@@ -157,12 +160,24 @@ and open the template in the editor.
     } 
  }
  
+ 
+ /* Navigation pagination entre les visites */
+.post-navigation h2{
+    display: none;
+  
+}
+
  .nav-previous {
      background: url('../img/fleche-gauche.png') no-repeat;
+     
  }
  
- .nav-next {
-     background: url('../img/fleche-droite.png') no-repeat;
+ .nav-next{
+     text-align: right;
  }
-
+ 
+ .nav-next::after {
+   content: "&rarr;";
+   
+ }
 

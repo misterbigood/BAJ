@@ -36,7 +36,7 @@
                                     $liste[] = $thumb;
                                     $image = wp_get_attachment_url($fichier->ID, $size = 'medium', $icon = false);
                                     ?>
-                                        <img src="<?php echo $image ?>" style="max-width: 100%; height: 300px;" />
+                                        <img src="<?php echo $image ?>" style="max-width: 100%; height: 390px;" />
                                         <p class="flex-caption"><?php echo $fichier->post_title; ?></p>
                                     <?php
                                     }
@@ -80,7 +80,7 @@
             </div>
         </div>
 
-        <footer class="entry-footer">
+        <footer class="entry-footer mam">
             <div class="contact-visite">
                 <p><img src="<?php echo get_template_directory_uri();?>/img/contact-enveloppe.png" class="contact-enveloppe"></p>
                 <p>Ecrivez-moi pour organiser cette visite</p>

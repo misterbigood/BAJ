@@ -189,11 +189,18 @@ and open the template in the editor.
   .footer-navigation li:last-child :after {
     content: none; }
 
+/* Navigation pagination entre les visites */
+.post-navigation h2 {
+  display: none; }
+
 .nav-previous {
   background: url("../img/fleche-gauche.png") no-repeat; }
 
 .nav-next {
-  background: url("../img/fleche-droite.png") no-repeat; }
+  text-align: right; }
+
+.nav-next::after {
+  content: "&rarr;"; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
