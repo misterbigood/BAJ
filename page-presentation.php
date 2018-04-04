@@ -45,9 +45,9 @@ get_header(); ?>
                         <div class="flex-col-4">
                             <h2>On en parle</h2>
                             <?php $loop = new WP_Query( array( 'post_type' => 'reference', 'posts_per_page' => 4, 'category' => 'current' ) ); ?>
-                            <section class="grid-2 has-gutter-l">
+                            <section class="grid-1 has-gutter-l">
                                 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                                <div>
+                                <div class="reference mbl">
                                     <h3><?php echo get_the_title(); ?></h3>
                                     <?php   $content=get_the_content();
                                             $content = apply_filters( 'the_content', $content );
