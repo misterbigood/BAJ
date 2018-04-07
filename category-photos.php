@@ -11,40 +11,29 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-                    <span class="signal">category - standard</span>
+                    <span class="signal">category</span>
                     
 		<?php
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
-                            <h1 class="page-title">Les visites</h1>
-                            <nav id="visites-navigation" class="category-navigation">
-                                    <?php
-                                            wp_nav_menu( array(
-                                                    'theme_location' => 'menu-3',
-                                                    'menu_id'        => 'category-menu',
-                                            ) );
-                                    ?>
-                            </nav><!-- #site-navigation -->
-                            
+                            <h1 class="page-title">Les photos</h1>                          
 			</header><!-- .page-header -->
-                        <div class="section-1 les-visites mbl">
-                        <section class="grid-3 has-gutter-xl">
+                        <div class="section-1 les-photos mbl">
+                        <section class="grid-2 has-gutter-xl">
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
                         ?>
                             <div>
                                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                                    <?php baladesauxjardins_post_thumbnail(); ?>
                                     <header class="entry-header">
-                                        <a href="<?php the_permalink();?>"><?php the_title( '<h2 class="entry-title mtm">', '</h2>' );?></a>
-                                    <span class="etiquette-visite"><?php the_category();?></span>
-                                    
+                                        <a href="<?php the_permalink();?>"><?php the_title( '<h3 class="entry-title mtm">', '</h3>' );?></a>
                                     </header><!-- .entry-header -->
-
-                                     <?php baladesauxjardins_post_thumbnail(); ?>
-
-	
+                                    <?php /* Affichage du contenu de l'article*/ 
+                                    the_content();
+                                    ?>
                                 </article><!-- #post-<?php the_ID(); ?> -->
                             
                                 <?php

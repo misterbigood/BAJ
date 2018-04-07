@@ -7,7 +7,7 @@
  * @package baladesauxjardins
  */
 ?>
-<span class="signal">template part visite</span>
+<span class="signal">templatepart content-visite</span>
 <div class="section-1 visite">
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <header class="entry-header">
