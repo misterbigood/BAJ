@@ -167,17 +167,31 @@ and open the template in the editor.
   
 }
 
- .nav-previous {
-     background: url('../img/fleche-gauche.png') no-repeat;
+.nav-visites .nav-links{
+    display: flex;
+    flex-direction: row;
+}
+
+ .nav-visites .nav-previous {
+     width:50%;
+     
      
  }
  
- .nav-next{
+ .nav-visites .nav-previous::before{
+     content:"<- ";
+     color:$color-base;
+ }
+ 
+ .nav-visites .nav-next{
+     width:50%;
      text-align: right;
  }
  
- .nav-next::after {
-   content: "&rarr;";
-   
+  .nav-visites .nav-next::after{
+     content:" ->";
+     color:$color-base;
  }
+
+ 
 

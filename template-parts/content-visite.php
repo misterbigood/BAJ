@@ -83,19 +83,19 @@
         <footer class="entry-footer mam">
             <div class="contact-visite">
                 <p><img src="<?php echo get_template_directory_uri();?>/img/contact-enveloppe.png" class="contact-enveloppe"></p>
-                <p>Ecrivez-moi pour organiser cette visite</p>
-                <p>ou appelez-moi au:</p>
+                <p>Écrivez-moi pour organiser cette visite</p>
+                <p>ou appelez-moi au :</p>
                 <p>Téléphone fixe: 09 81 26 74 77<br>
                     Téléphone mobile: 07 61 09 74 03</p>
             </div>
+            <div class="nav-visites mtl u-small">
             <?php
             the_post_navigation();
-
             // If comments are open or we have at least one comment, load up the comment template.
             if (comments_open() || get_comments_number()) :
                 comments_template();
             endif;
-            ?>
+            ?></div>
         </footer><!-- .entry-footer -->
     </article><!-- #post-<?php the_ID(); ?> -->
 </div>

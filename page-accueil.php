@@ -61,7 +61,7 @@ get_header(); ?>
                                             echo $content; ?>
                             </article>
                             <?php endwhile; wp_reset_query(); ?>
-                            <footer><a href="<?php echo get_home_url()."/rendez-vous";?>">Consultez l'agenda des visites pour les particuliers</a></footer>
+                            <footer class="mtl"><a href="<?php echo get_home_url()."/rendez-vous";?>">Consultez l'agenda des visites pour les particuliers</a></footer>
                         </div> <!-- Fin d'affichage des derniers RDV à l'agenda -->
                         <div class="flex-col-4"> <!-- Deuxième colonne - Affichage de la page Les conférences; page modifiable dans l'admin de wordpress -->
                             <?php
