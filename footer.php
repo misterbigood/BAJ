@@ -33,32 +33,5 @@
 
 
 <?php wp_footer(); ?>
-<script src="<?php bloginfo('template_url'); ?>/flexSlider/jquery.flexslider-min.js"></script>
-        <script type="text/javascript">
-            jQuery(window).load(function() {
-            jQuery('#carousel').flexslider({
-            animation: "slide",
-            controlNav: false,
-            animationLoop: false,
-            slideshow: false,
-            itemWidth: 150,
-            itemMargin: 5,
-            minItems: 2,
-            maxItems: 8,
-            asNavFor: '#slider'
-          });
-
-          jQuery('#slider').flexslider({
-            animation: "slide",
-            controlNav: false,
-            animationLoop: false,
-            slideshow: false,
-            sync: "#carousel"
-          });
-        });  </script>
-
-        <script src="<?php bloginfo('template_url'); ?>/flexSlider/modernizr.js"></script>
-        <script src="<?php bloginfo('template_url'); ?>/flexSlider/jquery.easing.js"></script>
-        <script src="<?php bloginfo('template_url'); ?>/flexSlider/jquery.mousewheel.js"></script>
 </body>
 </html>

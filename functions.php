@@ -120,11 +120,17 @@ add_action( 'widgets_init', 'baladesauxjardins_widgets_init' );
  */
 function baladesauxjardins_scripts() {
 	wp_enqueue_style( 'baladesauxjardins-style', get_stylesheet_uri() );    
-        wp_enqueue_style( 'baladesauxjardins-flexSlider-style', get_template_directory_uri() . '/flexSlider/flexslider.css' );    
+        wp_enqueue_style( 'baladesauxjardins-flexSlider-style', get_template_directory_uri() . '/flexSlider/flexslider.css' );
+        
+        wp_enqueue_script('jquery',false,array(),false,false);
 	wp_enqueue_script( 'baladesauxjardins-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
-	wp_enqueue_script( 'baladesauxjardins-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-
+        wp_enqueue_script( 'baladesauxjardins-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+        wp_enqueue_script( 'baladesauxjardins-flexSlider-script', get_template_directory_uri() . '/flexSlider/jquery.flexslider-min.js', array('jquery'), '2018', true);
+        wp_enqueue_script( 'baladesauxjardins-flexSlider-appel', get_template_directory_uri() . '/js/mdf.js', array(), '2018', true);
+        wp_enqueue_script( 'baladesauxjardins-flexSlider-modernizr-script', get_template_directory_uri() . '/flexSlider/modernizr.js', array(), '2018', true);
+        wp_enqueue_script( 'baladesauxjardins-flexSlider-easing-script', get_template_directory_uri() . '/flexSlider/jquery.easing.js', array(), '2018', true);
+        wp_enqueue_script( 'baladesauxjardins-flexSlider-mousewheel-script', get_template_directory_uri() . '/flexSlider/jquery.mousewheel.js', array(), '2018', true);
+            
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -235,6 +241,7 @@ add_action( 'init', 'reference_custom_post_type', 0 );
 
 /**
  * Implement second editor in normal posts
+ * 
  */
 
 add_action('add_meta_boxes','initialisation_metaboxes');
