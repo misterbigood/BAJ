@@ -90,6 +90,9 @@ button:hover {
   color: black;
   text-align: center; }
 
+.les-photos article {
+  margin-bottom: 4.5rem; }
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -193,14 +196,24 @@ and open the template in the editor.
 .post-navigation h2 {
   display: none; }
 
-.nav-previous {
-  background: url("../img/fleche-gauche.png") no-repeat; }
+.nav-visites .nav-links {
+  display: flex;
+  flex-direction: row; }
 
-.nav-next {
+.nav-visites .nav-previous {
+  width: 50%; }
+
+.nav-visites .nav-previous::before {
+  content: "<- ";
+  color: #212529; }
+
+.nav-visites .nav-next {
+  width: 50%;
   text-align: right; }
 
-.nav-next::after {
-  content: "&rarr;"; }
+.nav-visites .nav-next::after {
+  content: " ->";
+  color: #212529; }
 
 /*
 To change this license header, choose License Headers in Project Properties.

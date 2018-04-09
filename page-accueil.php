@@ -43,7 +43,7 @@ get_header(); ?>
                         </div><!-- Fin d'affichage de la page Accueil -->
                         <div class="flex-col-4 txtcenter mal"> <!-- Deuxième colonne - Partie fixe -->
                             <h3>Vous souhaitez organiser une visite pour un groupe ?</h3>
-                            <button class="mas">Découvrez toutes les visites</button>
+                            <a href="<?php echo get_home_url().'/category/visites' ?>"><button class="mas">Découvrez toutes les visites</button></a>
                             <p class="u-small u-italic">Choisissez une balade dans le catalogue et contactez moi pour me communiquer la date et l'horaire souhaités.</p>
                         </div> <!-- Fin d'affichage de la partie fixe -->
                     </section><!-- Fin de première section -->
@@ -61,7 +61,7 @@ get_header(); ?>
                                             echo $content; ?>
                             </article>
                             <?php endwhile; wp_reset_query(); ?>
-                            <footer><a href="<?php echo get_home_url()."/rendez-vous";?>">Consultez l'agenda des visites pour les particuliers</a></footer>
+                            <footer class="mtl"><a href="<?php echo get_home_url()."/rendez-vous";?>">Consultez l'agenda des visites pour les particuliers</a></footer>
                         </div> <!-- Fin d'affichage des derniers RDV à l'agenda -->
                         <div class="flex-col-4"> <!-- Deuxième colonne - Affichage de la page Les conférences; page modifiable dans l'admin de wordpress -->
                             <?php

@@ -35,7 +35,9 @@ get_header(); ?>
                         ?>
                         </section>
                         <?php
-			the_posts_navigation();
+			the_post_navigation( array (
+                            'in_same_term'               => true,
+                        ));
 
 		else :
 

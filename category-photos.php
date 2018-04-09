@@ -11,13 +11,13 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-                    <span class="signal">category</span>
+                    <span class="signal">category photos</span>
                     
 		<?php
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
-                            <h1 class="page-title">Les photos</h1>                          
+                            <h1 class="page-title">Les photos du jour</h1>                          
 			</header><!-- .page-header -->
                         <div class="section-1 les-photos mbl">
                         <section class="grid-2 has-gutter-xl">
@@ -50,7 +50,9 @@ get_header(); ?>
                         </section>
                         </div>
                         <?php
-			the_posts_navigation();
+			the_posts_navigation( array(
+                            'in_same_term'               => true,
+                        ));
 
 		else :
 

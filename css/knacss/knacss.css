@@ -2085,7 +2085,7 @@ button:focus {
   .button--ghost:active,
   .button--ghost:focus,
   .button--ghost:hover {
-    background-color: rgba(0, 0, 0, 0); }
+    background-color: transparent; }
 
 .btn--small,
 .button--small {
@@ -2206,13 +2206,13 @@ button:focus {
   .switch::before {
     content: "Ô£ò";
     float: right;
-    margin-right: 0.6666666667rem; }
+    margin-right: 0.66667rem; }
   .switch:checked {
     box-shadow: inset 2rem 0 0 #02FF38, inset 0 0 0 1px #02FF38; }
     .switch:checked::before {
       content: "Ô£ô";
       float: left;
-      margin-left: 0.6666666667rem; }
+      margin-left: 0.66667rem; }
 
 .checkbox {
   width: 2rem;

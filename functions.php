@@ -266,6 +266,53 @@ function save_custom_meta_box($post_id, $post_object) {
 add_action("save_post", "save_custom_meta_box", 10, 3);
 
 /**
+ * Vidéos appelées en embed ou iframe
+ * Rendre responsive les vidéos et leur affichage (enlever la taille
+ * automatique, notamment en hauteur, fixée par le iframe
+ * Code à insérer dans le css:
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.entry-content img, 
+.entry-content iframe, 
+.entry-content object, 
+.entry-content embed {
+        max-width: 100%;
+}
+ */
+function div_wrapper($content) {
+ // match any iframes
+ $pattern = '~<iframe.*</iframe>|<embed.*</embed>~';
+ preg_match_all($pattern, $content, $matches);
+
+ foreach ($matches[0] as $match) {
+ // wrap matched iframe with div
+ $wrappedframe = '<div class="video-container">' . $match . '</div>';
+
+ //replace original iframe with new in content
+ $content = str_replace($match, $wrappedframe, $content);
+ }
+
+ return $content; 
+}
+add_filter('the_content', 'div_wrapper');
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';

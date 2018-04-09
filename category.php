@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-                    <span class="signal">category - standard</span>
+                    <span class="signal">category</span>
                     
 		<?php
 		if ( have_posts() ) : ?>
@@ -34,7 +34,7 @@ get_header(); ?>
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
                         ?>
-                            <div>
+                            <div class="item-visite mbl">
                                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                                     <header class="entry-header">
                                         <a href="<?php the_permalink();?>"><?php the_title( '<h2 class="entry-title mtm">', '</h2>' );?></a>
@@ -61,7 +61,9 @@ get_header(); ?>
                         </section>
                         </div>
                         <?php
-			the_posts_navigation();
+			the_post_navigation( array (
+                            'in_same_term'               => true,
+                        ));
 
 		else :
 
