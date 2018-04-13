@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-            Single
+            <span class="signal">Single</span>
 		<main id="main" class="site-main">
 
 		<?php

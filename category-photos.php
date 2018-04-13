@@ -16,7 +16,7 @@ get_header(); ?>
 		<?php
 		if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<header class="page-header mtm">
                             <h1 class="page-title">Les photos du jour</h1>                          
 			</header><!-- .page-header -->
                         <div class="section-1 les-photos mbl">
@@ -27,15 +27,23 @@ get_header(); ?>
                         ?>
                             <div>
                                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                                    <?php baladesauxjardins_post_thumbnail(); ?>
+                                    <?php if (has_post_thumbnail( $post->ID ) ): ?>
+                                        <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+                                        <a data-caption-title='<?php the_title(); ?>' data-caption-desc='<?php the_content();?>' href="<?php echo $image[0];?>" class="foobox" rel="gallery"><?php the_post_thumbnail(); ?></a>
+                                    <?php endif; ?>
+                                    
                                     <header class="entry-header">
-                                        <a href="<?php the_permalink();?>"><?php the_title( '<h3 class="entry-title mtm">', '</h3>' );?></a>
+                                      <?php the_title( '<h3 class="entry-title mtm">', '</h3>' );?>
                                     </header><!-- .entry-header -->
                                     <?php /* Affichage du contenu de l'article*/ 
                                     the_content();
                                     ?>
                                 </article><!-- #post-<?php the_ID(); ?> -->
                             
+                                
+                               
+ 
+
                                 <?php
 				/*
 				 * Include the Post-Type-specific template for the content.

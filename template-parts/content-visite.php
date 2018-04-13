@@ -83,7 +83,7 @@
         <footer class="entry-footer mam">
             <div class="contact-visite">
                 <p><a href="<?php echo get_home_url().'/contact';?>"><img src="<?php echo get_template_directory_uri();?>/img/contact-enveloppe.png" class="contact-enveloppe"></a></p>
-                <p>Écrivez-moi pour organiser cette visite</p>
+                <p><a href="<?php echo get_home_url().'/contact';?>">Écrivez-moi pour organiser cette visite</a></p>
                 <p>ou appelez-moi au :</p>
                 <p>Téléphone fixe: 09 81 26 74 77<br>
                     Téléphone mobile: 07 61 09 74 03</p>

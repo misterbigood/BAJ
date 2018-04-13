@@ -43,7 +43,7 @@ get_header(); ?>
                         </div><!-- Fin d'affichage de la page Accueil -->
                         <div class="flex-col-4 txtcenter mal"> <!-- Deuxième colonne - Partie fixe -->
                             <h3>Vous souhaitez organiser une visite pour un groupe ?</h3>
-                            <a href="<?php echo get_home_url().'/category/visites' ?>"><button class="mas">Découvrez toutes les visites</button></a>
+                            <a href="<?php echo get_home_url().'/category/les-visites' ?>"><button class="mas">Découvrez toutes les visites</button></a>
                             <p class="u-small u-italic">Choisissez une balade dans le catalogue et contactez moi pour me communiquer la date et l'horaire souhaités.</p>
                         </div> <!-- Fin d'affichage de la partie fixe -->
                     </section><!-- Fin de première section -->

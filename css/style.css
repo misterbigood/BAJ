@@ -19,7 +19,7 @@ and open the template in the editor.
 */
 /*A d├®truire*/
 .signal {
-  color: red; }
+  display: none; }
 
 /* ------------------------------------------------- Gestion du responsive /
 ** ------------------------------------------------- taille ├®cran ----------
@@ -35,7 +35,7 @@ and open the template in the editor.
 /* Logo */
 .custom-logo {
   width: 19.8412698%;
-  min-width: 250px; }
+  min-width: 200px; }
 
 /* Incrustations vid├®o iframe */
 iframe {
@@ -82,6 +82,9 @@ button:hover {
 .etiquette-visite ul {
   list-style-type: none;
   padding: 0; }
+
+.item-visite-header {
+  min-height: 81px; }
 
 .section-2, .section-2-container {
   background-color: #ddf8e3; }
@@ -170,7 +173,7 @@ and open the template in the editor.
   margin-top: 50px; }
   .footer-navigation ul {
     list-style-type: none;
-    font-size: 1.6rem;
+    font-size: 1.37rem;
     font-weight: 400;
     letter-spacing: 50;
     line-height: 1.5; }
@@ -179,8 +182,8 @@ and open the template in the editor.
       .footer-navigation ul li :after {
         color: white;
         content: "|";
-        padding-left: 2.25rem;
-        padding-right: 2.25rem; }
+        padding-left: 1.5rem;
+        padding-right: 1.5rem; }
       .footer-navigation ul li a {
         color: inherit;
         text-decoration: none; }

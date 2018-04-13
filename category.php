@@ -16,7 +16,7 @@ get_header(); ?>
 		<?php
 		if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<header class="page-header mtm">
                             <h1 class="page-title">Les visites</h1>
                             <nav id="visites-navigation" class="category-navigation">
                                     <?php
@@ -36,7 +36,7 @@ get_header(); ?>
                         ?>
                             <div class="item-visite mbl">
                                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                                    <header class="entry-header">
+                                    <header class="entry-header item-visite-header">
                                         <a href="<?php the_permalink();?>"><?php the_title( '<h2 class="entry-title mtm">', '</h2>' );?></a>
                                     <span class="etiquette-visite"><?php the_category();?></span>
                                     
@@ -61,9 +61,9 @@ get_header(); ?>
                         </section>
                         </div>
                         <?php
-			the_post_navigation( array (
+			/*the_post_navigation( array (
                             'in_same_term'               => true,
-                        ));
+                        ));*/
 
 		else :
 

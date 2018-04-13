@@ -11,13 +11,13 @@
 <div class="section-1">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
-        <header class="entry-header">
+        <header class="entry-header mtm">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
         
 	<?php baladesauxjardins_post_thumbnail(); ?>
 
-	<div class="entry-content">
+	<div class="entry-content mbl">
 		<?php
 			the_content();
 
